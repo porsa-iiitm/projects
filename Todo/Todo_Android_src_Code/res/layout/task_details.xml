@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.prankul.todo.TaskDetails" >
+
+    <LinearLayout 
+        android:id="@+id/detailsLayout"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:orientation="vertical">
+	    
+          <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:orientation="vertical">
+	    
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/title"
+	        android:textStyle="bold" 
+        	android:textSize="18sp"/>
+	    
+	    <TextView
+	        android:id="@+id/titletxt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dp"
+	        android:text="@string/hello_world"
+	        android:textSize="16sp" />
+	    </LinearLayout>
+	    
+	      <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:orientation="vertical">
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/description"
+	        android:textStyle="bold" 
+        	android:textSize="18sp"/>
+	    
+	    <TextView
+	        android:id="@+id/descriptiontxt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dp"
+	        android:text="@string/hello_world"
+	        
+	        android:textSize="14sp" />
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:orientation="horizontal">
+	    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/status"
+		        android:textStyle="bold" 
+	        	android:textSize="18sp"/>
+		    
+		     <TextView
+		        android:id="@+id/prioritytxt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/hello_world" 
+		        android:layout_marginLeft="10dp"
+		        android:textSize="14sp"/>
+		 </LinearLayout>
+	     
+	    
+	    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:orientation="horizontal">
+		     
+		     <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/priority"
+		        android:textStyle="bold" 
+	        	android:textSize="18sp"/>
+		     
+		     <TextView
+		        android:id="@+id/statustxt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/hello_world" 
+		        android:layout_marginLeft="10dp"
+		        android:textSize="14sp"/>
+		     </LinearLayout>
+	     
+	    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:orientation="horizontal"> 
+	    
+	     <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/created_at"
+	        android:textStyle="bold" 
+        	android:textSize="18sp"/>
+	     
+	      <TextView
+	        android:id="@+id/createdattxt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	     
+	        android:text="@string/hello_world"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="14sp" />
+	      </LinearLayout>
+    </LinearLayout>
+    
+
+      <RelativeLayout
+		        android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:padding="5dp" >
+
+                <EditText
+                    android:id="@+id/edit_add_more"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_box_valid_border"
+                    android:hint="Add Comment"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="4dp"
+                    android:inputType="textCapSentences" >
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/plus"
+                  	android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="addField"
+                    android:layout_alignParentRight="true"
+                    android:src="@android:drawable/ic_input_add" />
+            </RelativeLayout>
+      
+      <ListView
+        android:id="@+id/comments_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailsLayout"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:layout_above="@id/footer"
+        android:layout_gravity="left"
+        android:layout_marginLeft="5dp"
+        android:listSelector="@drawable/list_row_selector" />
+      
+      
+        
+
+</RelativeLayout>
