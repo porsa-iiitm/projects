@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Todo Application</string>
+    <string name="hello_world">Hello!!</string>
+    <string name="search_hint">Title</string>
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="archive_task">Archived Tasks</string>
+    <string name="export_task">Export Tasks</string>
+    <string name="share_task">Share Tasks</string>
+    <string name="spinner_priority">Select Priority</string>
+    <string name="spinner_status">Select Status</string>
+    
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="priority">Priority  </string>
+    <string name="status">Status   </string>
+    <string name="created_at">Created At  </string>
+    
+    <string-array name="priority_array">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    
+     <string-array name="status_array">
+        <item>Yet to start</item>
+        <item>In-process</item>
+        <item>Complete</item>
+    </string-array>
+
+</resources>

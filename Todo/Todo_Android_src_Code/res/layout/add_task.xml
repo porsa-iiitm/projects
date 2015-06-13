@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   	  <TextView
+           android:id="@+id/text_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Title"
+           android:textStyle="bold"
+           android:layout_marginTop="5dp"
+           android:textSize="16sp" />
+
+	  <EditText
+	        android:id="@+id/edit_title"
+	        android:layout_width="match_parent"
+	        android:layout_below="@id/text_title"
+	        android:layout_height="40dp"
+	        android:layout_weight="1"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginBottom="20dp"
+	        android:background="@drawable/edit_box_valid_border"
+	        android:gravity="center"
+	        android:hint="Add Title"
+	        android:inputType="textCapSentences"
+	        android:scrollHorizontally="false" >
+
+	        <requestFocus />
+	    </EditText>
+       
+	    <TextView
+            android:id="@+id/text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_title"
+            android:text="Description"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+	  
+       <EditText
+           android:id="@+id/edit_description"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:layout_below="@+id/text_description"
+           android:layout_marginTop="2dp"
+           android:layout_weight="1"
+           android:background="@drawable/edit_box_valid_border"
+           android:gravity="center"
+           android:hint="Add Description"
+           android:inputType="textCapSentences|textMultiLine"
+           android:scrollHorizontally="false" >
+	    </EditText>
+	   
+       <LinearLayout 
+           android:id="@+id/spinners_layout"
+           android:layout_width="match_parent"
+		   android:layout_height="wrap_content"
+		   android:layout_marginTop="20dp"
+		   android:layout_below="@+id/edit_description"
+		   android:orientation="horizontal">
+       
+	       <LinearLayout 
+	           android:id="@+id/priority_layout"
+	           android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_weight="1"
+			   android:orientation="vertical">
+		    
+		        <TextView
+		           android:id="@+id/text_priority"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="Priority"
+		           android:layout_marginLeft="5dp"
+		           android:textStyle="bold"
+
+		           android:textSize="16sp" />
+		       
+		        <!-- Priority Spinner -->
+			    <Spinner
+			        android:id="@+id/priority_spinner"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="2dp"
+			        android:prompt="@string/spinner_priority"
+			    />
+		    </LinearLayout>
+		    
+	       <LinearLayout 
+	           android:id="@+id/status_layout"
+	           android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_weight="1"
+			   android:orientation="vertical">
+		    
+			    <TextView
+		            android:id="@+id/text_status"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:text="Status"
+		            android:textStyle="bold"
+		            android:textSize="16sp" />
+			    
+			    <!-- Status Spinner -->
+			    <Spinner
+			        android:id="@+id/status_spinner"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="2dp"
+			        android:prompt="@string/spinner_status"
+			    />
+	       </LinearLayout>
+       </LinearLayout>
+       
+       <LinearLayout 
+	           android:id="@+id/buttons_layout"
+	           android:layout_width="fill_parent"
+			   android:layout_height="match_parent"
+			   android:layout_below="@+id/spinners_layout"
+			   android:gravity="center_vertical"
+			   android:orientation="horizontal">
+       <Button
+           android:id="@+id/save_task"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:onClick="onSave"
+           android:layout_weight="1"
+           android:text="Save" />
+
+       <Button
+           android:id="@+id/cancel_task"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:onClick="onCancel"
+           android:text="Cancel" />
+       </LinearLayout>
+	    
+
+</RelativeLayout>
