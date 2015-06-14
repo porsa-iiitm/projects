@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/prankul/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-e233147078c2b19d76518d0925fd0374654136b9.jar" />
+    </item>
+    <item
+        jar="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/pre-dexed/debug/classes-b48d22e17a1a4f2deaf5fc9ac52a481ddd6ea354.jar" />
+    </item>
+    <item
+        jar="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/exploded-aar/com.github.brnunes/swipeablerecyclerview/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="84ca9c4de7248ee8fe452c2087cd102211ea3dd3">
+        <dex dex="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/pre-dexed/debug/classes-7281082f666f80a1ab9c883c2043e3e3a18e2f81.jar" />
+    </item>
+    <item
+        jar="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/pre-dexed/debug/classes-7b5490614daa9d8335caaab8f281e95b341a4993.jar" />
+    </item>
+    <item
+        jar="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-9bc990b6b924b992dfbb8685f2e5e3e4b808e545.jar" />
+    </item>
+    <item
+        jar="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/pre-dexed/debug/classes-b82bb32794cfc583cd3820a4a6ac929dcba0bc8c.jar" />
+    </item>
+    <item
+        jar="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/prankul/AndroidStudioProjects/SMS/app/build/intermediates/pre-dexed/debug/classes-1370f2594719b81cb8489f6be854a6b7056f99f0.jar" />
+    </item>
+
+</items>
